@@ -1,1 +1,248 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@use '@angular/material-experimental' as matx;
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$azuretheme: matx.define-theme((
+  color: (
+    theme-type: dark,
+    primary: matx.$m3-cyan-palette,
+  ),
+  typography: (
+    brand-family: 'Comic Sans',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+$orangetheme: matx.define-theme((
+  color: (
+    theme-type: dark,
+    primary: matx.$m3-orange-palette,
+  ),
+  typography: (
+    brand-family: 'Comic Sans',
+    bold-weight: 900
+  ),
+  density: (
+    scale: -1
+  )
+));
+
+.azure-primary {
+
+    @include mat.badge-color($azuretheme, $color-variant: primary);
+  
+    @include mat.button-color($azuretheme, $color-variant: primary);
+    // Checkbox
+    @include mat.checkbox-color($azuretheme, $color-variant: primary);
+    // Chips
+    @include mat.chips-color($azuretheme, $color-variant: secondary);
+
+    // Datepicker
+    @include mat.datepicker-color($azuretheme, $color-variant: primary);
+
+    // Fab
+    @include mat.fab-color($azuretheme, $color-variant: primary);
+
+    // Form-field
+    @include mat.form-field-color($azuretheme, $color-variant: primary);
+
+    // Icon
+    @include mat.icon-color($azuretheme, $color-variant: surface);
+
+    // Option
+    @include mat.option-color($azuretheme, $color-variant: secondary);
+
+    // Progress-bar
+    @include mat.progress-bar-color($azuretheme, $color-variant: primary);
+    // Progress-spinner
+    @include mat.progress-spinner-color($azuretheme, $color-variant: primary);
+
+    // Pseudo-checkbox
+    @include mat.pseudo-checkbox-color($azuretheme, $color-variant: primary);
+
+    // Radio
+    @include mat.radio-color($azuretheme, $color-variant: primary);
+
+    // Select
+    @include mat.select-color($azuretheme, $color-variant: primary);
+
+    // Slide-toggle
+    @include mat.slide-toggle-color($azuretheme, $color-variant: primary);
+
+    // Slider
+    @include mat.slider-color($azuretheme, $color-variant: primary);
+
+    // Stepper
+    @include mat.stepper-color($azuretheme, $color-variant: primary);
+
+    // Tabs
+    @include mat.tabs-color($azuretheme, $color-variant: primary);
+}
+
+.azure-tertiary {
+    // Button
+    @include mat.button-color($azuretheme, $color-variant: tertiary);
+  
+    // Badge
+    @include mat.badge-color($azuretheme, $color-variant: tertiary);
+
+    // Checkbox
+    @include mat.checkbox-color($azuretheme, $color-variant: tertiary);
+  
+  
+    // Datepicker
+    @include mat.datepicker-color($azuretheme, $color-variant: tertiary);
+  
+    // Fab
+    @include mat.fab-color($azuretheme, $color-variant: tertiary);
+  
+    // Form-field
+    @include mat.form-field-color($azuretheme, $color-variant: tertiary);
+  
+    // Icon
+    @include mat.icon-color($azuretheme, $color-variant: tertiary);
+  
+    // Option
+    @include mat.option-color($azuretheme, $color-variant: tertiary);
+  
+    // Progress-bar
+    @include mat.progress-bar-color($azuretheme, $color-variant: tertiary);
+  
+    // Progress-spinner
+    @include mat.progress-spinner-color($azuretheme, $color-variant: tertiary);
+  
+    // Pseudo-checkbox
+    @include mat.pseudo-checkbox-color($azuretheme, $color-variant: tertiary);
+  
+    // Radio
+    @include mat.radio-color($azuretheme, $color-variant: tertiary);
+  
+    // Select
+    @include mat.select-color($azuretheme, $color-variant: tertiary);
+  
+    // Slide-toggle
+    @include mat.slide-toggle-color($azuretheme, $color-variant: tertiary);
+  
+    // Slider
+    @include mat.slider-color($azuretheme, $color-variant: tertiary);
+  
+    // Stepper
+    @include mat.stepper-color($azuretheme, $color-variant: tertiary);
+  
+    // Tabs
+    @include mat.tabs-color($azuretheme, $color-variant: tertiary);
+  
+    // Continúa con los estilos para otros componentes si es necesario...
+  }
+
+  .orange-primary {
+    // Button
+    @include mat.button-color($orangetheme, $color-variant: primary);
+  
+    // Badge
+    @include mat.badge-color($orangetheme, $color-variant: primary);
+  
+    // Checkbox
+    @include mat.checkbox-color($orangetheme, $color-variant: primary);
+
+    // Datepicker
+    @include mat.datepicker-color($orangetheme, $color-variant: primary);
+  
+    // Fab
+    @include mat.fab-color($orangetheme, $color-variant: primary);
+  
+    // Form-field
+    @include mat.form-field-color($orangetheme, $color-variant: primary);
+  
+    // Icon
+    @include mat.icon-color($orangetheme, $color-variant: primary);
+  
+    // Option
+    @include mat.option-color($orangetheme, $color-variant: primary);
+  
+    // Progress-bar
+    @include mat.progress-bar-color($orangetheme, $color-variant: primary);
+  
+    // Progress-spinner
+    @include mat.progress-spinner-color($orangetheme, $color-variant: primary);
+  
+    // Pseudo-checkbox
+    @include mat.pseudo-checkbox-color($orangetheme, $color-variant: primary);
+  
+    // Radio
+    @include mat.radio-color($orangetheme, $color-variant: primary);
+  
+    // Select
+    @include mat.select-color($orangetheme, $color-variant: primary);
+  
+    // Slide-toggle
+    @include mat.slide-toggle-color($orangetheme, $color-variant: primary);
+  
+    // Slider
+    @include mat.slider-color($orangetheme, $color-variant: primary);
+  
+    // Stepper
+    @include mat.stepper-color($orangetheme, $color-variant: primary);
+  
+    // Tabs
+    @include mat.tabs-color($orangetheme, $color-variant: primary);
+  
+    // Continúa con los estilos para otros componentes si es necesario...
+  }
+
+// Estilos para Orange Error
+.orange-error {
+    // Badge
+    @include mat.badge-color($orangetheme, $color-variant: error);
+  
+    // Button
+    @include mat.button-color($orangetheme, $color-variant: error);
+  
+    // Checkbox
+    @include mat.checkbox-color($orangetheme, $color-variant: error);
+  
+    // Form-field
+    @include mat.form-field-color($orangetheme, $color-variant: error);
+  
+    // Icon
+    @include mat.icon-color($orangetheme, $color-variant: error);
+  
+    // Option
+    @include mat.option-color($orangetheme, $color-variant: error);
+  
+    // Progress-bar
+    @include mat.progress-bar-color($orangetheme, $color-variant: error);
+  
+    // Progress-spinner
+    @include mat.progress-spinner-color($orangetheme, $color-variant: error);
+  
+    // Pseudo-checkbox
+    @include mat.pseudo-checkbox-color($orangetheme, $color-variant: error);
+  
+    // Radio
+    @include mat.radio-color($orangetheme, $color-variant: error);
+  
+    // Select
+    @include mat.select-color($orangetheme, $color-variant: error);
+  
+    // Slide-toggle
+    @include mat.slide-toggle-color($orangetheme, $color-variant: error);
+  
+    // Slider
+    @include mat.slider-color($orangetheme, $color-variant: error);
+  
+    // Stepper
+    @include mat.stepper-color($orangetheme, $color-variant: error);
+  
+    // Tabs
+    @include mat.tabs-color($orangetheme, $color-variant: error);
+  
+    // Continúa con los estilos para otros componentes si es necesario...
+  }
+
+html, body { height: 100%; color: #e0e3e2;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #191C1C;}
